@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0a0e1a" rx="16"/>
+
+  <!-- Divider -->
+  <line x1="400" y1="40" x2="400" y2="360" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ===== LISTENING STATE (Left) ===== -->
+  <text x="200" y="45" text-anchor="middle" fill="url(#title)" font-family="Inter,system-ui,sans-serif" font-size="18" font-weight="700">🎤 Listening</text>
+
+  <!-- Breathing circle glow -->
+  <circle cx="200" cy="190" r="90" fill="url(#glow1)" opacity="0.6"/>
+  <circle cx="200" cy="190" r="60" fill="url(#glow1)" opacity="0.8"/>
+
+  <!-- Core orb -->
+  <circle cx="200" cy="190" r="35" fill="#0a0e1a" stroke="#22d3ee" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="200" cy="190" r="25" fill="none" stroke="#3b82f6" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="200" cy="190" r="15" fill="#22d3ee" opacity="0.15"/>
+
+  <!-- Label -->
+  <text x="200" y="300" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="13">Core animation only</text>
+  <text x="200" y="320" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="11">Breathing circle pulses gently</text>
+  <text x="200" y="345" text-anchor="middle" fill="#22d3ee" font-family="Inter,system-ui,sans-serif" font-size="11" opacity="0.7">No outer dots</text>
+
+  <!-- Range badge -->
+  <rect x="150" y="355" width="100" height="24" rx="12" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-opacity="0.2"/>
+  <text x="200" y="371" text-anchor="middle" fill="#22d3ee" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500">Range: 0</text>
+
+  <!-- ===== SPEAKING STATE (Right) ===== -->
+  <text x="600" y="45" text-anchor="middle" fill="url(#title)" font-family="Inter,system-ui,sans-serif" font-size="18" font-weight="700">🔊 Speaking</text>
+
+  <!-- Outer dots rings -->
+  <circle cx="600" cy="190" r="120" fill="none" stroke="#22d3ee" stroke-width="0.5" stroke-dasharray="2,8" opacity="0.6"/>
+  <circle cx="600" cy="190" r="110" fill="none" stroke="#3b82f6" stroke-width="0.5" stroke-dasharray="2,10" opacity="0.5"/>
+  <circle cx="600" cy="190" r="100" fill="none" stroke="#22d3ee" stroke-width="0.5" stroke-dasharray="2,12" opacity="0.4"/>
+  <circle cx="600" cy="190" r="130" fill="none" stroke="#8b5cf6" stroke-width="0.5" stroke-dasharray="2,6" opacity="0.3"/>
+
+  <!-- Dot particles on rings -->
+  <circle cx="720" cy="190" r="3" fill="#22d3ee" opacity="0.8"/>
+  <circle cx="600" cy="70" r="2.5" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="490" cy="150" r="2" fill="#22d3ee" opacity="0.6"/>
+  <circle cx="510" cy="260" r="3" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="700" cy="120" r="2.5" fill="#22d3ee" opacity="0.5"/>
+  <circle cx="680" cy="280" r="2" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="530" cy="100" r="2" fill="#22d3ee" opacity="0.5"/>
+  <circle cx="670" cy="300" r="2.5" fill="#8b5cf6" opacity="0.4"/>
+
+  <!-- Breathing circle glow (brighter) -->
+  <circle cx="600" cy="190" r="90" fill="url(#glow2)" opacity="0.7"/>
+  <circle cx="600" cy="190" r="65" fill="url(#glow2)" opacity="0.9"/>
+
+  <!-- Core orb (brighter) -->
+  <circle cx="600" cy="190" r="35" fill="#0a0e1a" stroke="#22d3ee" stroke-width="2" opacity="0.95"/>
+  <circle cx="600" cy="190" r="25" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.7"/>
+  <circle cx="600" cy="190" r="15" fill="#22d3ee" opacity="0.25"/>
+
+  <!-- Label -->
+  <text x="600" y="300" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="13">Core + Outer dots animation</text>
+  <text x="600" y="320" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="11">Dots opacity &amp; speed driven by range</text>
+  <text x="600" y="345" text-anchor="middle" fill="#a78bfa" font-family="Inter,system-ui,sans-serif" font-size="11" opacity="0.7">Full animation active</text>
+
+  <!-- Range badge -->
+  <rect x="550" y="355" width="100" height="24" rx="12" fill="#8b5cf6" fill-opacity="0.1" stroke="#8b5cf6" stroke-opacity="0.2"/>
+  <text x="600" y="371" text-anchor="middle" fill="#a78bfa" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500">Range: 8</text>
+</svg>

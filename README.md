@@ -2,6 +2,16 @@
 
 A React-based Lottie animation player with **AI listening/speaking states** and **frequency-range controlled visuals**. Built with Next.js 12 and `lottie-react`.
 
+## Preview
+
+<p align="center">
+  <img src="./public/animation-states.svg" alt="AI Animation States — Listening vs Speaking" width="100%" />
+</p>
+
+> **Left: Listening** — Only the core center animation plays with a gentle breathing glow. No outer dots.
+>
+> **Right: Speaking** — Full animation with outer dotted rings orbiting the core. Intensity controlled by frequency range (0–10).
+
 ---
 
 ## How the Animation Works
