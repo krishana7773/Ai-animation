@@ -135,31 +135,57 @@ The `breathRange` (0–10) can be driven by real-time audio amplitude data to cr
 
 ### Prerequisites
 
-- Node.js v16+
-- npm
+- **Node.js** v16 or higher — [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **Git** — [Download here](https://git-scm.com/)
 
-### Installation
+### Step 1: Clone the Repository
 
 ```bash
 git clone git@github.com:krishana7773/Ai-animation.git
 cd Ai-animation
+```
+
+### Step 2: Install Dependencies
+
+```bash
 npm install
 ```
 
-### Development
+This installs `next`, `react`, `react-dom`, and `lottie-react`.
+
+### Step 3: Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3005](http://localhost:3005) in your browser.
+The server starts on **port 3005**. Open your browser and go to:
 
-### Build
+👉 **[http://localhost:3005](http://localhost:3005)**
+
+You should see:
+
+- A dark-themed page with the **"AI Animation"** title
+- A glowing **breathing circle** in the center (Listening mode)
+- **Listening / Speaking** toggle buttons
+- A **Frequency Range** slider (0–10)
+
+### Step 4: Try It Out
+
+1. The default state is **Listening** — only the core animation + breathing circle are visible
+2. Click **"Speaking"** — the full Lottie animation appears with outer dotted rings
+3. Drag the **Frequency Range** slider to the right — the outer dots become more visible, scale up, and the animation speeds up
+4. Click **"Listening"** again — the outer dots fade away, returning to the calm center animation
+
+### Production Build
 
 ```bash
 npm run build
 npm start
 ```
+
+This creates an optimized production build and starts the server.
 
 ---
 
